@@ -1,27 +1,13 @@
-@charset "UTF-8";
-*{
-    font-family: "Noto Sans S Chinese";
-    box-sizing: border-box;
-}
-a{
-    text-decoration: none;
-}
-ul,li{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-h1,h2,h3,h4,h5,h6,p{
-    margin: 0;
-    font-weight: 400;
-}
-body, html {
-    margin: 0;
-    padding: 0;
-}
+/*reset*/
+
+
+
+
+/*header*/
 .header{
     position: fixed;
     width: 100%;
+    top: 0;
     height: 100px;
     z-index: 10;
     background: #ffffff;
@@ -70,10 +56,15 @@ body, html {
     color: #ffffff;
     background: #2D2C64;
 }
+
+
+
+/*head page*/
 .head-page{
     width: 100%;
-    height: 950px;
-    padding-top: 260px;
+    height: 100%;
+    padding-top:10%;
+    margin-top: 100px;
 }
 .head-page-content{
     width: 500px;
@@ -108,94 +99,80 @@ body, html {
     margin-top: 250px;
     font-size: 60px;
 }
+
+
+
+
+/*news-section*/
 .section{
     width: 100%;
     height: 500px;
 }
-.news-section{
+.section-content{
     border-top: 1px solid #dddddd;
     width: 1100px;
     margin: 0 auto;
     padding-top: 50px;
 }
-.news-section-title{
-    text-align: center;
-    margin-bottom: 50px;
+.news-img-wrapper {
+    width: 300px;
+    height: 180px;
+    background: #dddddd;
 }
-.news-section-raw{
-    width: 100%;
-    height: 300px;
+.news-col {
+    width: 300px;
+    margin-left: 38px;
 }
-.news-section-col{
-    display: inline-block;
-    float: left;
+.news-col ul{
+    margin-top: 20px;
 }
-.news-section-col-left{
-    width: 75%;
-}
-.news-section-col-right{
-    width: 25%;
-}
-.news-title-list-wrapper,.news-img-wrapper{
-    display: inline-block;
-    float: left;
-}
-.news-title-list-wrapper{
-    width: 55%;
-    height: 300px;
-}
-.news-img-wrapper{
-    width: 45%;
-    height: 300px;
-}
-.news-title{
-    height: 50px;
+.news-col ul li{
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    padding-right: 30px;
+    font-size: 16px;
+    line-height: 40px;
+    height:40px;
 }
-.news-title a{
-    line-height: 50px;
-    color: #000000;
+
+.notice-col {
+    width: 300px;
+    margin-left: 38px;
+    margin-top: -20px;
 }
-.news-img{
-    width: 100%;
-    height: 75%;
-    background: #dddddd;
-    margin-top: 5%;
-}
-.notice-wrapper{
-    margin-top: -135px;
-    margin-left: 30px;
-    border: .5px solid #cacaca;
-    border-top: 3px solid #2D2C64;
-}
-.notice-list::-webkit-scrollbar {
-    display: none;
-}
-.notice-list{
-    height: 420px;
-    overflow-y: scroll;
-}
-.notice-title{
+
+.notice-title {
     font-size: 20px;
-    height: 50px;
-    line-height: 50px;
+    width: 100px;
     text-align: center;
-    letter-spacing: 5px;
-    border-bottom: 1px solid #cacaca;
+    margin-left: 100px;
+    border-bottom: 1px solid #2D2C64;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 0;
 }
-.notice-item{
-    height: 80px;
-    border-bottom: 1px solid #cacaca;
-    padding: 10px;
-    line-height: 31px;
+
+.notice-col li {
+    height: 75px;
+    border-bottom: 1px solid #dddddd;
+    padding: 7px 5px 8px 5px;
+    line-height: 30px;
     overflow: hidden;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s;
 }
-.notice-item:last-child{
-    border-bottom: 0;
+
+.notice-col li:hover {
+    padding-left: 8px;
+    padding-right: 2px;
+    background: #eeeeee;
 }
+
+
+
+
+/*video section*/
 .video-content{
     width: 1100px;
     margin: 0 auto;
@@ -219,7 +196,7 @@ body, html {
     line-height: 300px;
 }
 .video-title::after{
-    content: '2016video';
+    content: '2016招新宣传片';
     font-size: 16px;
 }
 .department-section{
@@ -299,6 +276,16 @@ body, html {
 .footer .col-md-4:last-child li{
     height: 30px;
     line-height: 30px;
+}
+.rights-section{
+    width: 100%;
+    height: 400px;
+    background: #F2F3F5;
+}
+.rights-content{
+    width: 1100px;
+    border-top: 1px solid #dddddd;
+    margin: 0 auto;
 }
 
 
