@@ -200,6 +200,16 @@
     -webkit-box-orient: vertical;
 }
 
+/*rights*/
+.rights-content .col-md-4 {
+    text-align: center;
+}
+.rights-icon {
+    width: 80px;
+    height: 80px;
+    background: #000;
+    margin: 0 auto;
+}
 
 
 
